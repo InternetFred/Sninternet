@@ -1,0 +1,279 @@
+ <!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png"
+href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-
+5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon"
+href="https://cpwebassets.codepen.io/assets/favicon/favicon-
+aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="image/x-icon"
+href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-
+8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+color="#111">
+<title>Hammacher Schlemmer Catalog Item Generator</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/4.7.0/css/font-awesome.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Nunito+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=EB+Garamond&family=Nunito+Sans:wght@600&display=swap"
+rel="stylesheet">
+<style>
+body {
+  color: #2e2e2e;
+  font-family: 'EB Garamond', serif;
+  font-size: 48px;
+  text-align: justify;
+  margin: 0 auto;
+}
+.container {
+  background-color: #029989;
+  color: whitesmoke;
+  position: relative;
+  /*                margin-top: 10vh;*/
+  height: 89vh;
+  padding-top: 14vh;
+  box-sizing: border-box;
+}
+.container p {
+  margin-top: 10vh;
+  padding: 5px;
+  line-height: 1.6;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+width: 73cr;
+  /*                top: 20vh;*/
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-right: 5px;
+  margin-left: 30px;
+}
+button {
+  height: 50px;
+  justify-content: right;
+  outline: none;
+  font-family: 'Nunito Sans', sans-serif;
+  position: relative;
+  padding: 10px;
+  width: 120px;
+  left: 10vh;
+  border: none;
+  background-color: #fff;
+  border: 2px solid #1b1b1b;
+  color: #1b1b1b;
+  transition: 500ms ease-in;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+button i {
+  margin-left: 3px;
+}
+button:hover {
+  color: #fff;
+  background-color: #1b1b1b;
+}
+.container:first-child {
+  height: 30vh !important;
+}
+@media screen and (max-width: 565px) {
+  .container p {
+    font-size: 17px;
+  }
+  div:first-child {
+    height: 2vh;
+  }
+}
+ 
+@media screen and (min-width: 565px) {
+  body {
+    text-align: center;
+  }
+} </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+  <div style="box-sizing:border-box;display:flex;padding:30px;justify-
+content:center;align-items:center">
+<img src="https://drive.google.com/file/d/16aAse6dgShVbimVhWa2wU5U5D4ybCgAa/view?usp=drivesdk”>
+  <h1>Catalog Item Generator</h1>
+  <button style="" onclick="sentence()" style>
+<b>Refresh</b>&nbsp;&nbsp;
+<i class="fa fa-refresh" aria-hidden="true">
+</i>
+</button>
+</div>
+<div class="container">
+  <p id="sentence"></p>
+</div>
+    <script
+src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeo
+ut-
+1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js">
+</script>
+  <script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
+"></script>
+<script src="https://www.mattboldt.com/demos/typed-js/js/typed.js">
+</script>
+      <script id="rendered-js">
+ var furst, secund, therd;
+            furst = ["The 100 Hour"," The 100' Range"," The 180
+Degree"," The 24\""," The 80 Mile"," The 9 1/2'"," The Adjustable","
+The Adjustable Height"," The Advanced"," The Aficionado's"," The All
+Day"," The All Media"," The All Weather"," The Androscoggin"," The Any
+Music Format"," The Arch Supporting"," The Army Air Corps"," The
+Astronaut's"," The At Home"," The Australian"," The Authentic"," The
+Author's"," The Award Winning"," The Back Pain Relieving"," The
+Bamboo"," The Best"," The Better"," The Blood Oxygen Tracking"," The
+ 
+Bluetooth"," The Brighter"," The Brightest"," The Cassette To
+Digital"," The CD Playing"," The Child's"," The Children's"," The
+Circulation Enhancing"," The Classic"," The Clutter Free"," The
+Cocktail"," The Commercial"," The Commercial Grade"," The Cordless","
+The Countertop"," The Crank Powered"," The Custom Fit"," The
+Customizable"," The Driver's"," The Driveway"," The DVD Playing"," The
+Easy Access"," The Easy Read"," The Electronic"," The Emergency"," The
+Essential"," The European"," The Evaporative"," The Eyestrain
+Reducing"," The Family"," The Fireside"," The First"," The Five
+Mile"," The Flameless"," The Folding"," The Garage"," The Gasless","
+The Generation Three"," The Gentleman's"," The Genuine"," The Genuine
+Irish"," The Genuine Tibetan"," The Gilded"," The Glow In The Dark","
+The Glowing"," The Hammacher Schlemmer"," The Handheld"," The
+Handmade"," The Hearing Enhancing"," The Heated"," The Hygienic"," The
+Hypnotic"," The Icelandic"," The Immersive"," The Indoor/Outdoor","
+The Instant"," The Italian"," The John Wayne"," The Jumbo"," The
+Kinetic"," The Lady's"," The Lamborghini"," The Large Screen"," The
+LEGO"," The Lightweight"," The Luxuriously Soft"," The Military
+Grade"," The Modular"," The Mold And Mildew Resistant"," The
+Monogrammed"," The More Powerful"," The Most Advanced"," The Most
+Effective"," The Most Powerful"," The Motion Activated"," The
+Motorized"," The Multi-Compartment"," The Musical"," The My First","
+The National Geographic"," The Naturalist's"," The New York Times","
+The Night Vision"," The Non-Slip"," The Oenophile's"," The Only"," The
+Packable"," The Personal"," The Phone Charging"," The Photo
+Archiving"," The Place Anywhere"," The Plantar Fasciitis"," The
+Portable"," The Quick Removal"," The Rainbow"," The Realistic"," The
+Remote Controlled"," The RFID"," The Ride-On"," The Rotating"," The
+Second Language"," The Self-Contained"," The Sherpa Lined"," The Side
+Sleeper's"," The Simple"," The Singing"," The Sky And Water"," The
+Sleep Improving"," The Smart"," The Smartphone"," The Softer Than
+Cashmere"," The Solid Marble"," The Solid Teak"," The Spa"," The Story
+Telling"," The Stratospheric"," The Superior"," The Swiveling"," The
+Tactical"," The Temperature Regulating"," The Thinking of You"," The
+Tight Space"," The Tiki Torch"," The Transforming"," The Truck
+Driver's"," The Ultra Slim"," The Virus Mold And Germ Destroying","
+The Voice Amplifying"," The Voice Controlled"," The Voice Enhancing","
+The Wall Mounted"," The Warming"," The Washable"," The Waterproof","
+The Wearable"," The Wireless"," The World's Brightest"," The World's
+Smallest"," The World's Thinnest"," The World's Warmest"," The Year To
+Remember"];
+            secund = ["Audiophile"," Adjustable"," All Terrain","
+Alpaca"," Andean"," Arthritis"," Automatic"," Aviator's","
+Beginner's"," Bison"," Bluetooth"," British Sporting"," Buoyant","
+Cable Knit"," Calorie Counting"," Car"," Carbon Monoxide And Natural
+Gas"," Cashmere"," Classic"," Comfort"," Constellation Identifying","
+Cordless"," Curved"," Digital"," Digital Display"," Disposable","
+Donegal"," Dual"," DVD And TV"," Electric"," Emergency"," Ergonomic","
+Flannel"," Fleece"," Foldaway"," Four-Leaf Clover"," Front Pocket","
+Genuine Turkish Cotton"," Handheld"," HD"," Heated"," Heathered","
+Herringbone"," High Definition"," Home Security"," Hooded","
+Indoor/Outdoor"," Instant"," Interactive"," Intrusion Alert"," Irish
+Flannel"," Irish Fleece Lined"," Jellyfish"," Kangaroo Leather","
+Karaoke"," Lawn"," Leather"," LED"," Lighted"," Lullaby"," Mickey
+Mouse"," Monogrammed"," Motion Activated"," Multi Directional","
+Neuropathy"," No Blind Spot"," Noise Cancelling"," Orthotic","
+Outdoor"," Packable"," Peek-A-Boo"," Personalized"," Peruvian Highland
+ 
+Alpaca"," Photo Taking"," Pocket"," Pocket Sized"," Portable","
+Posture Correcting"," Projection"," Reading"," Rotating","
+Sanitizing"," See Through"," Sheepskin"," Shortwave"," Shower","
+Sliding Door"," Solar"," Stereo"," Stunt"," Survival"," Tabletop","
+Talking"," Temperature Regulating"," Therapeutic"," Travel"," Turkish
+Cotton"," TV"," Two Way"," Ultrasonic"," Vinyl Record"," Virtual","
+Wall Outlet"," Walnut"," Waterproof"," Wide Beam"," Windshield"," Wine
+Cellar"," Wireless"," Wool"," Wool Lined"," 1000-Amp"," Plantar
+Fasciitis"];
+            therd = ["Abrams Tank"," Air Purifier"," Alarm","
+Amplified Antenna"," Animated Bear"," Aquarium"," Arcade Table","
+Atomic Alarm Clock"," Atomic Clock"," Backup Battery"," Bathrobe","
+Bike Speaker"," Binoculars"," Blanket"," Boombox"," Boots","
+Bracelet"," Bunny"," Bush Pilot Jacket"," Cap"," Car Seat"," Car
+Vacuum"," Cassette Player/Radio"," Cat Bed"," Charger"," Charging
+Station"," Cinema"," Clock"," Clock Radio"," Comfort Sneakers","
+Converter"," Converter And Player"," Cord Organizer"," Cushion","
+Defense Device"," Defense Flashlight"," Desk Lamp"," Device Charger","
+Digital Microscope"," Dishwasher"," Drone"," DVD Player"," Ear Buds","
+Earpiece"," Electric Grill"," End Table"," Erector Set"," Fedora","
+Finger Puppets"," Firewood Splitter"," Flannel Slippers","
+Flashlight"," Flight Jacket"," Floor Lamp"," Foosball Table"," Game","
+Gel Seat"," Globe"," Glove Liners"," Gloves"," Hat"," Headphones","
+Hearing Aid"," Heater"," Home Planetarium"," Hootenanny","
+Humidifier"," Illumiglobe"," Insoles"," Jacket"," Jewelry Armoire","
+Jewelry Box"," Jewelry Cleaner"," Jukebox"," Jump Starter","
+Keyboard"," Kit"," Knife Sharpener"," Lamp"," Lantern"," Laundry
+Station"," Leggings"," Library"," Lighter"," Lights"," Lounge Pants","
+Luxury Bathrobe"," Luxury Towels"," Magnifier"," Management System","
+Meat Thermometer"," Message Box"," Metal Detector"," Micro Cut
+Shredder"," Mini Arcade"," Monocular"," Motion Activated Light","
+Movie Screen"," Multi Tool"," Necklace"," Newton's Cradle","
+Nightshirt"," Oceanarium"," Organizer"," Ottoman"," Oxygen Bar","
+Pajamas"," Party Speaker"," Password Vault"," Patio Heater"," Peanuts
+Christmas Train"," Pet Sweater"," Phone And Tablet Stand"," Phone
+Cradle"," Photo Booth"," Photo Printer"," Photo Vault"," Pillow","
+Pinball Machine"," Planetarium"," Plush Caterpillar"," Pod","
+Poncho"," Popcorn Maker"," Portable Lights"," Power Generator","
+Practice Putting Mat"," Radio"," RC Helicopter"," RC Truck"," Reading
+Light"," Rear View Mirror"," Recliner"," Replica"," Robe"," Robot","
+Sandal"," Scarf"," Security Light"," Shirt"," Side Table","
+Simulator"," Slipper Socks"," Slippers"," Smart Watch"," Snow Boots","
+Snow Tarp"," Socks"," Sound System"," Speaker"," Speaker System","
+Speakerphone"," Speakers"," Play Set"," Sun Visor"," Sweater","
+Sweatshirt"," Swing Set"," Telephone"," Telescope"," Tennis Set","
+Throw"," Tomato Press"," Towel Warmer"," Translator"," Turkish Cotton
+Luxury Bathrobe"," Tutor"," Typewriter"," Umbrella"," Vanity Mirror","
+Vest"," Wallet"," Wand"," Watch"," Wearable Monitor"," Wine
+Refrigerator"," World Map"," World Radio"];
+            function randGen() {
+              return Math.floor(Math.random() * 3);
+            }
+            function sentence() {
+              var rand1 = Math.floor(Math.random() * 169);
+              var rand2 = Math.floor(Math.random() * 113);
+ 
+ therd[rand3];
+var rand3 = Math.floor(Math.random() * 178);
+//                var randCol = [rand1,rand2,rand3];
+//                var i = randGen();
+var content = furst[rand1] + " " + secund[rand2] + " " +
+              document.getElementById('sentence').innerHTML = "<b>" +
+content + "</b>";
+};
+            sentence();
+//# sourceURL=pen.js
+</script>
+</body></html>
